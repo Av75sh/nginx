@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nginx Server - Interactive UI</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">Nginx⚡</div>
+    <ul>
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#architecture">Architecture</a></li>
+      <li><a href="#usecases">Use Cases</a></li>
+      <li><a href="#docs">Docs</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header id="hero" class="hero">
+    <div class="hero-content">
+      <h1>Welcome to <span>Nginx</span> Server 🚀</h1>
+      <p>The high-performance web server, reverse proxy & load balancer trusted worldwide.</p>
+      <a href="#features" class="btn">Explore Features</a>
+    </div>
+  </header>
+
+  <section id="features" class="section">
+    <h2>✨ Key Features</h2>
+    <div class="cards">
+      <div class="card">
+        <span class="material-icons">speed</span>
+        <h3>High Performance</h3>
+        <p>Handles thousands of concurrent connections with minimal resources.</p>
+      </div>
+      <div class="card">
+        <span class="material-icons">dns</span>
+        <h3>Load Balancing</h3>
+        <p>Distributes traffic intelligently across multiple servers.</p>
+      </div>
+      <div class="card">
+        <span class="material-icons">security</span>
+        <h3>Security</h3>
+        <p>Provides SSL/TLS termination, rate limiting, and DDoS protection.</p>
+      </div>
+      <div class="card">
+        <span class="material-icons">storage</span>
+        <h3>Static File Serving</h3>
+        <p>Optimized delivery of static assets like HTML, CSS, JS, and images.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="architecture" class="section dark">
+    <h2>⚙️ How Nginx Works</h2>
+    <p>Nginx uses an event-driven, asynchronous architecture that makes it extremely scalable. Instead of creating a thread per request like Apache, it uses a small number of worker processes to handle thousands of requests simultaneously.</p>
+    
+    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80" 
+         alt="Nginx Architecture" class="arch-img">
+  </section>
+
+  <section id="usecases" class="section">
+    <h2>📌 Popular Use Cases</h2>
+    <div class="accordion">
+      <div class="accordion-item">
+        <button>Reverse Proxy</button>
+        <div class="accordion-content">Forward client requests to backend servers, hiding their identity.</div>
+      </div>
+      <div class="accordion-item">
+        <button>API Gateway</button>
+        <div class="accordion-content">Secure and manage microservice API requests.</div>
+      </div>
+      <div class="accordion-item">
+        <button>Load Balancer</button>
+        <div class="accordion-content">Distribute traffic evenly to prevent server overload.</div>
+      </div>
+      <div class="accordion-item">
+        <button>Web Acceleration</button>
+        <div class="accordion-content">Cache responses and serve static assets at lightning speed.</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="docs" class="section dark">
+    <h2>📖 Documentation</h2>
+    <p>Explore the official Nginx documentation to dive deeper into configuration and advanced use cases.</p>
+    <a href="https://nginx.org/en/docs/" target="_blank" class="btn">Visit Docs</a>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>✉️ Contact Us</h2>
+    <form id="contactForm">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send</button>
+    </form>
+    <p id="formResponse" class="response"></p>
+  </section>
+
+  <footer>
+    <p>Powered by Nginx | Built by Avinash </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
