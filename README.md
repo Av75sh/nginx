@@ -41,6 +41,7 @@ http {
 ## ▶️ Running the Project
 ```
 docker-compose up --build
+docker-compose up --build --scale node=3
 ```
 3️⃣ Stop containers
 ```
