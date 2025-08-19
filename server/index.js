@@ -1,5 +1,6 @@
 const express = require("express");
 const app = express();
+const PORT = process.env.PORT || 7000;
 
 app.get("/", (req, res) => {
   res.send("Hello from Node backend!");
@@ -13,6 +14,6 @@ app.get('/health', (req, res) => {
     res.status(200).send('OK');
 });
 
-app.listen(7000, () => {
-  console.log("Node server running on port 7000");
+app.listen(PORT, () => {
+  console.log(`Node server running on ${PORT}`);
 });
